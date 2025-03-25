@@ -3,52 +3,63 @@
 HOW TO USE
 
 
-
-
-a[href*="/channels/@me/1248009471788056607"] {
-    background-image: url(https://c.tenor.com/TPkcIjVXm2MAAAAd/tenor.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-
-*/
-
-
-
-
-/* 
-changes how the hover looks on everyone
-delete this if you dont like it
- */
-
-li[class*="channel__972a0 dm__972a0"] {
-    :hover {
-        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
-        background-color: rgba(0, 0, 0, 0.3);
-        
-    }
-
-    & div:hover {
-        background-color: revert;
-    }
-}
-
-
-
-/* example on my own discord account */
+                                                        you see this long ass numbers?*
 li[class*="channel__972a0 dm__972a0"]:has(a[href*="/channels/@me/1303078300180283504"]) {
     background-image: url(https://media.tenor.com/MtVsnj-yQAMAAAAM/tralalero-tralala.gif); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+* yeah you gotta change that to the channel ID that you wanna put it on.
+
+NOT the user ID!!!
+
+
+
+
+
+
+
+if you need it, my discord is: desondanks
+*/
+
+
+
+
+
+
+/* example on my own discord account */
+li[class*="channel__972a0 dm__972a0"]:has(a[href*="/channels/@me/1303078300180283504"]) {
+
+
+    /* put the url of the gif or picture here */
+    background-image: url(https://media.tenor.com/MtVsnj-yQAMAAAAM/tralalero-tralala.gif); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     
-    /* if you want to change how the hover looks */
+    /* if you want to change how it looks when you hover over me */
     :hover {
         /* background-color: red; */
     }
 
+}
+
+
+/* 
+changes how the hover looks on everyone
+delete this if you dont like it
+*/
+
+
+li[class*="channel__972a0 dm__972a0"] {
+    
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    & > :hover {
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
 }
 
