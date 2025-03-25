@@ -1,64 +1,54 @@
-:root {
+/* 
 
-    --unseen-image: url("https://c.tenor.com/NqO231sqojIAAAAd/tenor.gif");
-}
-
-
-nav[aria-label*="Servers sidebar"] {
-    /* display: none; */
-}
-
-.peopleColumn__133bf {
-    /* display: none; */
-}
+HOW TO USE
 
 
 
-.channel__972a0:hover {
-    background-color: black;
 
-
-}
-
-
-a:has(div[class~="highlighted__20a53"]) {
-    background-color: black;
-
-
-}
-
-
-/* custom DM achtergronden */
-
-/* Sen */
-a[href*="/channels/@me/1109135652626382909"] {
+a[href*="/channels/@me/1248009471788056607"] {
     background-image: url(https://c.tenor.com/TPkcIjVXm2MAAAAd/tenor.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-/* millie */
-a[href*="/channels/@me/1333551781157802065"] {
-    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExenk3bHgyamVtNjR4a253c2QyYTNkZ2R1aXd0NGI4MHphbzlsYXAzYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/83pDOQOqFO9Yk/giphy.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* exxi */
-a[href*="/channels/@me/1335717508468178994"] {
-    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2JxdGEwaXhvN2Frb2c4cGM4Y3RzZGV0NG5sbGU4M3BxeTA2a2kzdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/F6nQNPCJxbzMXhgRtn/giphy.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 
-.message__5126c[data-list-item-id*="1109135652626382909"] {
-    h3::after {
-        content: "  NIGGA";
-        color: red;
+*/
+
+
+
+
+/* 
+changes how the hover looks on everyone
+delete this if you dont like it
+ */
+
+li[class*="channel__972a0 dm__972a0"] {
+    :hover {
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.3);
+        
     }
-    
+
+    & div:hover {
+        background-color: revert;
+    }
 }
+
+
+
+/* example on my own discord account */
+li[class*="channel__972a0 dm__972a0"]:has(a[href*="/channels/@me/1303078300180283504"]) {
+    background-image: url(https://media.tenor.com/MtVsnj-yQAMAAAAM/tralalero-tralala.gif); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* if you want to change how the hover looks */
+    :hover {
+        /* background-color: red; */
+    }
+
+}
+
